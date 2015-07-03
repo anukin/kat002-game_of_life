@@ -1,6 +1,7 @@
 class Board
-	attr_reader :columns
+	attr_reader :columns, :rows
 	def initialize(m,n)
-		@columns=m
+		@columns = m
+		@rows = n
 	end
 end
