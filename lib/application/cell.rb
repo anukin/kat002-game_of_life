@@ -3,4 +3,7 @@ class Cell
 	def initialize(state)
 		@state=state
 	end
+	def alive?
+		self.state == "alive" ? true : false 
+	end
 end
