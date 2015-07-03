@@ -5,7 +5,11 @@ describe "Cell" do
         expect(cell.state).to eq("dead")
     end
     it "is expected to respond to alive?" do
-        cell=Cell.new("dead")
+        cell = Cell.new("dead")
         expect(cell.alive?).to eq false
+    end
+    it "is expected to respond to dead?" do
+        cell = Cell.new("alive")
+        expect(cell.dead?).to eq false
     end
 end

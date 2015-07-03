@@ -6,4 +6,7 @@ class Cell
 	def alive?
 		self.state == "alive" ? true : false 
 	end
+	def dead?
+		self.state == "dead" ? true : false
+	end
 end
