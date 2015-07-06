@@ -1,15 +1,17 @@
 class Cell
 	attr_accessor :state
+    @DEAD = "dead"
+    @ALIVE = "alive"	
 	
 	def initialize(state)
 		@state = state
 	end
 
 	def alive?
-		self.state == "alive" ? true : false 
+		self.state == @ALIVE ? true : false 
 	end
 
 	def dead?
-		self.state == "dead" ? true : false
+		self.state == @DEAD ? true : false
 	end
 end
